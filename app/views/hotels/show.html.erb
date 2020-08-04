@@ -1,0 +1,4 @@
+<%= image_tag(@hotel.picture_url, width: 600) if @hotel.picture.present? %>
+<p><%= link_to 'レビューの記入', hotel_reviews_path(@hotel) %></p>
+<p><%= @hotel.name %></p>
+<p><%= @hotel.description %></p>
